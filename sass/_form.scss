@@ -1,0 +1,91 @@
+.form {
+    background-color: $color-white;
+    box-shadow: 1rem 1rem 4rem rgba($color-black, .1);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(20rem, .8fr)) min-content;
+    align-items: center;
+    width: 60rem;
+    height: 5.5rem;
+    z-index: 100;
+
+    @media only screen and (max-width: $bp-largest) {
+        width: 50rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: repeat(2, minmax(6rem, 1fr));
+        width: 35rem;
+        justify-items: center;
+        grid-row-gap: 1rem;
+        height: 100%;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        grid-template-columns: minmax(6rem, 1fr);
+        width: 30rem;
+        grid-row-gap: 2rem;
+    }
+
+    &__group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1rem;
+
+        &--footer {
+            margin-left: 0;
+        }
+
+        @media only screen and (max-width: $bp-largest) {
+            margin-left: 0;
+        }
+    }
+
+    &__img {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin: 1rem;
+    }
+
+    &__input {
+        color: $color-100;
+        font-size: 1rem;
+        width: 15rem;
+        height: 3rem;
+        border: none;
+        border-bottom: .1rem solid $color-20;
+
+        @media only screen and (max-width: $bp-large) {
+            width: 13rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            width: 15rem;
+        }
+
+        &--footer {
+            border-bottom: none;
+            padding-left: 1rem;
+            width: 14rem;
+            margin-right: .5rem;
+            color: $color-60;
+        }
+
+        &:focus {
+            outline: none;
+            border-bottom: .0625rem solid $color-primary;
+
+            &:invalid {
+                border-bottom: .0625rem solid $color-red;
+            }
+        }
+    }
+
+    button {
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: 1 / -1;
+        }
+    }
+}

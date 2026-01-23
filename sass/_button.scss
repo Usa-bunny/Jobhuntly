@@ -1,0 +1,143 @@
+.btn {
+    height: 3.125rem;
+    border: none;
+    font-family: $font-body;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s;
+
+    &__text { 
+        background-color: transparent;
+        color: $color-primary;
+        text-decoration: none;
+
+        &--long {
+            width: 5.75rem;
+        }
+    }
+
+    &__text-card {
+        font-family: $font-body;
+        font-size: 1.125rem;
+        font-weight: 400;
+        text-decoration: none;
+        color: $color-60;
+
+        &--white {
+            color: $color-white;
+        }
+
+        &--footer {
+            color: $color-40;
+            height: 1.625rem;
+            font-size: 1rem;
+        }
+    }
+
+    &__text-border {
+        font-family: $font-body;
+        font-weight: 400;
+        text-decoration: none;
+        border: .1rem solid $color-primary;
+        padding: .5rem;
+        height: 2.125rem;
+        color: $color-primary;
+        text-align: center;     
+    }
+
+    &__fill { 
+        background-color: $color-primary;
+        color: $color-white;
+
+        &--short {
+            width: 6.75rem;
+        }
+
+        &--medium {
+            width: 8rem;
+        }
+
+        &--long {
+            width: 13rem;
+            margin: 0 1rem;
+
+            @media only screen and (max-width: $bp-largest) {
+                width: 8rem;
+            }
+        }
+    }
+
+    &__fill--white {
+        background-color: $color-white;
+        color: $color-primary;
+        width: 11rem;
+    }
+
+    &__tag {
+        border-radius: 5rem;
+        padding: .25rem .75rem;
+        height: 2rem;
+        font-weight: 600;
+        font-size: .875rem;
+
+        &--yellow {
+            background-color: #EB85331A;
+            color: $color-yellow;
+        }
+
+        &--green {
+            background-color: #56CDAD1A;
+            color: $color-green;
+        }
+
+        &--blue {
+            background-color: #4640DE1A;
+            color: $color-primary;
+        }
+
+        &--red {
+            background-color: #FF65501A;
+            color: $color-red;
+        }
+    }
+
+    &__outline {
+        border-radius: 5rem;
+        padding: .25rem .75rem;
+        height: 2rem;
+        font-weight: 600;
+        font-size: .875rem;
+        background-color: transparent;
+
+        &--yellow {
+            border: .08rem solid $color-yellow;
+            color: $color-yellow;
+        }
+
+        &--blue {
+            border: .08rem solid $color-primary;
+            color: $color-primary;
+        }
+    }
+
+    &__media-sosial {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: transparent;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+        
+        img {
+            width: 2rem;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.05) translateY(-.1rem);
+        filter: brightness(1.1);
+    }
+}

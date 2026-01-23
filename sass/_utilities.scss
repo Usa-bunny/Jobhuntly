@@ -1,0 +1,27 @@
+.center-text { text-align: center !important; }
+
+.margin-bottom-small { margin-bottom: 2rem !important; }
+.margin-bottom-medium { margin-bottom: 4rem !important; }
+.margin-bottom-big { margin-bottom: 8rem !important; }
+.margin-bottom-huge { margin-bottom: 10rem !important; }
+
+.margin-top-small { margin-top: 2rem !important; }
+.margin-top-medium { margin-top: 4rem !important; }
+.margin-top-big { margin-top: 8rem !important; }
+.margin-top-huge { margin-top: 10rem !important; }
+
+.line {
+    border: 1px solid $color-20;
+    display: inline-block;
+
+    &-1 {
+        width: .0625rem;
+        height: 100%;
+    }
+
+    &-2 {
+        width: .0625rem;
+        height: 2rem;
+        margin: 0 .5rem;
+    }
+}

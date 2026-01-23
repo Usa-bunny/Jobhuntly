@@ -1,0 +1,69 @@
+$color-primary: #4640DE;
+$color-secondary: #CCCCF5;
+$color-tertiary: #E7F6FD;
+
+$color-yellow: #FFB836;
+$color-green: #56CDAD;
+$color-red: #FF6550;
+$color-blue: #26A4FF;
+$color-purple: #7B61FF;
+
+$color-100: #25324B;
+$color-80: #515B6F;
+$color-60: #7C8493;
+$color-40: #A8ADB7;
+$color-20: #E4E5E7;
+$color-10: #F9FAFC;
+$color-0: #F8F8FD;
+
+$color-white: #fff;
+$color-black: #000;
+
+$font-body: "Epilogue", sans-serif;
+$font-heading: "ClashDisplay-Regular", sans-serif;
+
+$padding-body: 0 6rem;
+
+$bp-largest: 75em;          // 1200px
+$bp-large: 62em;            // 992px
+$bp-medium: 48em;           // 768px
+$bp-small: 30em;          // 480px
+
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 100%;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 90%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 80%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 70%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 50%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    font-family: $font-body;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 4.875rem repeat(6, minmax(min-content, max-content)) min-content;
+    position: relative;
+}

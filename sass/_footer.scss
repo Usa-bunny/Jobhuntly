@@ -1,0 +1,89 @@
+.footer {
+    background-color: #202430;
+    padding: $padding-body;
+    grid-row: 8 / 9;
+
+    &__text {
+        display: grid;
+        grid-template-columns: minmax(25rem, 2fr) minmax(10rem, .9fr) minmax(10rem, .7fr) minmax(20rem, 1.5fr);
+        margin-top: 4rem;
+
+        @media only screen and (max-width: $bp-largest) {
+            grid-template-columns: repeat(3, max-content);
+            grid-column-gap: 3rem;
+            justify-content: center;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-template-columns: repeat(1, max-content);
+            grid-row-gap: 2rem;
+            text-align: center;
+        }
+    }
+
+    &__section {
+
+        &--logo {
+            display: flex;
+            align-items: end;
+            margin-bottom: 2rem;
+
+            img {
+                margin-right: .75rem;
+                width: 2rem;
+                height: 2rem;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                justify-content: center;
+            }
+        }
+
+        h6 {
+            margin-bottom: 1.125rem;
+        }
+
+        a {
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__copyright {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 5rem;
+        padding: 3.5rem 0;
+        border-top: .1rem solid $color-80;
+
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 3rem;
+            padding: 2.5rem 0;
+        }
+
+        &--btn {
+            @media only screen and (max-width: $bp-medium) {
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    &__p1 {
+        width: 20rem;
+    }
+
+    &__p2 {
+        width: 18rem;
+        margin-bottom: 2.5rem;
+    }
+}

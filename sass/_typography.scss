@@ -1,0 +1,81 @@
+%heading {
+    font-family: $font-heading;
+}
+
+.heading-1 {
+    font-family: "ClashDisplay-Medium", sans-serif;
+    font-size: 4.5rem;      //72px
+
+    &--blue {
+        color: $color-blue;
+
+        &-line {
+            width: 28rem;
+        }
+    }
+}
+
+.heading-2 {
+    font-family: "ClashDisplay-Semibold", sans-serif;
+    font-size: 3rem;        //48px
+
+    &--blue {
+        color: $color-blue;
+    }
+
+    &--white {
+        color: $color-white;
+    }
+}
+
+.heading-3 {
+    @extend %heading;
+    font-size: 2rem;        //32px
+}
+
+.heading-4 {
+    @extend %heading;
+    font-size: 1.5rem;      //24px
+
+    &--white {
+        color: $color-white;
+    }
+}
+
+.heading-5 {
+    @extend %heading;
+    font-size: 1.25rem;     //20px
+}
+
+.heading-6 {
+    @extend %heading;
+    font-size: 1.125rem;    //18px
+
+    &--white {
+        color: $color-white;
+    }
+}
+
+.paragraph-1 {
+    font-family: $font-body;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: $color-60;
+    width: 32rem;
+}
+
+.paragraph-2 {
+    font-family: $font-body;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $color-80;
+    line-height: 160%;
+
+    &--white {
+        color: $color-white;
+    }
+
+    &--gray {
+        color: $color-40;
+    }
+}
